@@ -1,14 +1,16 @@
-id,test,setup,trial,success,run_id,notes
-1,baseline,normal setup,1,1,dd012ef6,cube placed in tray
-2,baseline,normal setup,2,1,,cube placed in tray
-3,baseline,normal setup,3,1,,cube placed in tray
-4,position,cube moved 10cm right,1,1,,worked normally
-5,position,cube moved 10cm right,2,1,,worked normally
-6,position,cube moved 10cm right,3,1,,worked normally
-7,similar objects,second red cube nearby,1,1,,correct cube placed in tray
-8,similar objects,second red cube nearby,2,1,,correct cube placed in tray
-9,similar objects,second red cube nearby,3,1,,correct cube placed in tray
-10,multiple similar objects,four red cubes closest-to-tray task,1,1,09100b92,correct cube selected
-11,multiple similar objects,four red cubes closest-to-tray task,2,1,,correct cube selected
-12,multiple similar objects,four red cubes closest-to-tray task,3,1,,correct cube selected
-13,obstruction,target partly blocked by mug,1,1,804f4891,correct cube selected and placed in tray
+experiment,condition,trial,success,notes
+baseline,original setup,1,1,worked
+baseline,original setup,2,1,worked
+baseline,original setup,3,1,worked
+position,cube moved 10 cm right,1,1,worked
+position,cube moved 10 cm right,2,1,worked
+position,cube moved 10 cm right,3,1,worked
+similar cube,similar red cube nearby,1,1,worked
+similar cube,similar red cube nearby,2,1,worked
+similar cube,similar red cube nearby,3,1,worked
+multiple cubes,"several red cubes, target closest to tray",1,1,worked
+multiple cubes,"several red cubes, target closest to tray",2,1,worked
+multiple cubes,"several red cubes, target closest to tray",3,1,worked
+blocked cube,target partly blocked by mug,1,1,worked
+blocked cube,target partly blocked by mug,2,1,worked
+blocked cube,target partly blocked by mug,3,1,worked
