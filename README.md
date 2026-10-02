@@ -1,29 +1,44 @@
 # RobotGym Test
 
-I made this repo to test RobotGym and learn more about robot simulation.
+I made this project to try out RobotGym and learn more about robot simulation and manipulation.
 
-The main test is simple: have the robot pick up an object and place it in a target area. After I get that working, I want to change the scene a little at a time and see when the robot starts having trouble.
+The main task was simple: have the robot pick up a red cube and place it inside a tray. I started with an easy setup and then changed the scene to see how well the robot handled different situations.
 
-I plan to test:
+## What I tested
 
-- moving the object
-- adding other objects around it
-- putting similar objects close together
-- changing the camera or lighting
+- normal pick and place
+- moving the cube 10 cm to the right
+- adding another similar red cube nearby
+- adding several similar red cubes and asking for the one closest to the tray
+- partially blocking the target cube with a mug
 
-I will save the results in `results/results.csv` and keep useful feedback in `notes/feedback.md`.
+The robot completed every test I tried successfully.
+
+## Results
+
+| Test | Result |
+| --- | --- |
+| Baseline setup | 3/3 successful |
+| Cube moved 10 cm right | 3/3 successful |
+| Similar red cube nearby | 3/3 successful |
+| Multiple similar red cubes | 3/3 successful |
+| Target partly blocked by a mug | 1/1 successful |
+
+The last test was the most difficult one. There were several red cubes on the table, and a mug was partly blocking the target cube. The robot still picked the correct cube and placed it in the tray.
+
+I also ran into a `413 Payload Too Large` error after working in the same session for a while. Starting again with a fresh session fixed the issue.
+
+The individual runs are saved in `results/results.csv`.
 
 ## Files
 
-- `test-plan.md` - what I am testing
+- `test-plan.md` - the tests I ran
 - `results/results.csv` - results from each run
 - `scripts/analyze_results.py` - simple script to summarize the results
-- `notes/feedback.md` - things I notice while using RobotGym
+- `notes/feedback.md` - notes from using RobotGym
 
-## Running the analysis
+## Run the results script
 
 ```bash
 python scripts/analyze_results.py
 ```
-
-I have not filled in the results yet. I will update this repo as I run the tests in RobotGym.

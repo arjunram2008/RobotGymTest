@@ -1,25 +1,14 @@
 id,test,setup,trial,success,run_id,notes
-1,baseline,normal,1,,,
-2,baseline,normal,2,,,
-3,baseline,normal,3,,,
-4,position,10cm right,1,,,
-5,position,10cm right,2,,,
-6,position,10cm right,3,,,
-7,position,10cm left,1,,,
-8,position,10cm left,2,,,
-9,position,10cm left,3,,,
-10,position,15cm farther,1,,,
-11,position,15cm farther,2,,,
-12,position,15cm farther,3,,,
-13,clutter,2 extra objects,1,,,
-14,clutter,2 extra objects,2,,,
-15,clutter,2 extra objects,3,,,
-16,clutter,4 extra objects,1,,,
-17,clutter,4 extra objects,2,,,
-18,clutter,4 extra objects,3,,,
-19,similar objects,10cm apart,1,,,
-20,similar objects,10cm apart,2,,,
-21,similar objects,10cm apart,3,,,
-22,similar objects,5cm apart,1,,,
-23,similar objects,5cm apart,2,,,
-24,similar objects,5cm apart,3,,,
+1,baseline,normal setup,1,1,dd012ef6,cube placed in tray
+2,baseline,normal setup,2,1,,cube placed in tray
+3,baseline,normal setup,3,1,,cube placed in tray
+4,position,cube moved 10cm right,1,1,,worked normally
+5,position,cube moved 10cm right,2,1,,worked normally
+6,position,cube moved 10cm right,3,1,,worked normally
+7,similar objects,second red cube nearby,1,1,,correct cube placed in tray
+8,similar objects,second red cube nearby,2,1,,correct cube placed in tray
+9,similar objects,second red cube nearby,3,1,,correct cube placed in tray
+10,multiple similar objects,four red cubes closest-to-tray task,1,1,09100b92,correct cube selected
+11,multiple similar objects,four red cubes closest-to-tray task,2,1,,correct cube selected
+12,multiple similar objects,four red cubes closest-to-tray task,3,1,,correct cube selected
+13,obstruction,target partly blocked by mug,1,1,804f4891,correct cube selected and placed in tray

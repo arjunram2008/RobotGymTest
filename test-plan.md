@@ -1,40 +1,45 @@
 # Test plan
 
-## Basic test
+The task for each test was based on picking up a red cube and placing it inside the tray.
 
-The robot needs to pick up one object and place it inside a target area.
+## 1. Baseline
 
-I will first try to get the same basic setup working a few times.
+Use one red cube and one tray with the table mostly empty.
 
-## Tests
+Task:
 
-### Move the object
+`Pick up the red cube and place it inside the tray.`
 
-Try the same task after moving the object:
+Result: 3/3 successful.
 
-- 10 cm right
-- 10 cm left
-- 15 cm farther away
+## 2. Move the cube
 
-### Add clutter
+Move the red cube about 10 cm to the right without changing the rest of the scene.
 
-Add other objects around the target object:
+Result: 3/3 successful.
 
-- 2 extra objects
-- 4 extra objects
+## 3. Similar cube nearby
 
-### Similar objects
+Add another red cube close to the target cube and keep the same basic task.
 
-Put similar-looking objects near each other and ask the robot to pick one specific object.
+Result: 3/3 successful.
 
-Try different spacing between the objects, such as 10 cm and 5 cm.
+## 4. Multiple similar cubes
 
-### Camera and lighting
+Add four red cubes close together. One cube is closer to the tray than the others.
 
-If the earlier tests work, try changing the camera angle or lighting and see if that affects the result.
+Task:
 
-## What I will record
+`Pick up the red cube closest to the tray and place it inside the tray.`
 
-For each run I will record whether it worked, the RobotGym run ID if there is one, and a short note about what happened.
+Result: 3/3 successful.
 
-If something fails in an interesting way, I will try it again to see if the same failure happens more than once.
+## 5. Partly blocked target
+
+Keep several red cubes in the scene and put a small mug partly in front of the target cube.
+
+Task:
+
+`Pick up the red cube nearest the tray and behind the small mug, and place it inside the tray. Leave the other cubes and mug alone.`
+
+Result: 1/1 successful.
